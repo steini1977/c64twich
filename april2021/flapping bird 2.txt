@@ -1,0 +1,26 @@
+10 rem flapping bird2 on my canvas
+12 l$=chr$(157)
+15 r$=chr$(29)
+16 d$=chr$(17)
+17 u$=chr$(145)
+20 rem "UQI"shift uqi
+22 rem "CQC"shift cqc
+30 a$=a$+"     "+l$+l$+l$+l$+l$+d$
+32 a$=a$+" CQC "+l$+l$+l$+l$+l$+d$
+34 a$=a$+"     "+l$+l$+l$+l$+l$
+36 a$=a$+u$+u$
+40 b$=b$+"     "+l$+l$+l$+l$+l$+d$
+42 b$=b$+" UQI "+l$+l$+l$+l$+l$+d$
+44 b$=b$+"     "+l$+l$+l$+l$+l$
+46 b$=b$+u$+u$
+50 rem
+52 r=int(rnd(1)*4)+1
+60 if r=1 then print l$;
+62 if r=2 then print r$;
+64 if r=3 then print u$;
+66 if r=4 then print d$;
+70 print a$;
+72 for wt=1 to 30:next wt
+74 print b$;
+75 for wt=1 to 30:next wt
+76 goto 50
