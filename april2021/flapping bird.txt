@@ -1,0 +1,19 @@
+10 rem flapping bird on my canva
+12 lf$=chr$(157)
+15 rt$=chr$(29)
+16 dw$=chr$(17)
+17 up$=chr$(145)
+20 print "UQI";:rem shift uqi
+25 print lf$;lf$;lf$;
+26 for wt=1 to 30:next wt
+30 print "CQC";:rem shift cqc
+35 print lf$;lf$;lf$;
+36 for wt=1 to 30:next wt
+37 print "   ";
+38 print lf$;lf$;lf$;
+40 r=int(rnd(1)*4)+1
+45 if r=1 then print rt$;
+46 if r=2 then print lt$;lt$;lf$;lt$;
+47 if r=3 then print dw$;
+48 if r=4 then print up$;
+50 goto 20
